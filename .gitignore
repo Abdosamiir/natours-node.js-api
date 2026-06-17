@@ -1,0 +1,4 @@
+node_modules
+
+# Local config with secrets (Mapbox token, etc.)
+public/js/config.js
