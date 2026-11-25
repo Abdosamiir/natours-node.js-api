@@ -7,11 +7,14 @@ const {
   deleteTour,
   checkID,
   checkBody,
+  alias,
 } = require('../controller/tourController');
 
 const router = express.Router();
 
 // router.param('id', checkID);
+
+router.route('/top-5-cheap').get(alias, getAllTours);
 
 router.route('/').get(getAllTours).post(checkBody, createTour);
 
